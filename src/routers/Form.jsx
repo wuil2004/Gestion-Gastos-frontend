@@ -34,13 +34,13 @@ const Form = ({ ruta, setIsAuthenticated }) => {
   const manejarFormulario = async (e) => {
     e.preventDefault();
     
-    // Marcar todos los campos como tocados
+  
     setTouched({
       email: true,
       password: true
     });
 
-    // Validación de campos
+    
     if (!formData.email || !formData.password) {
       setError("Todos los campos son requeridos");
       return;
@@ -69,7 +69,7 @@ const Form = ({ ruta, setIsAuthenticated }) => {
     }
   };
 
-  // Función para determinar si hay errores de validación
+  
   const getFieldError = (field) => {
     return touched[field] && !formData[field] ? "Este campo es requerido" : "";
   };

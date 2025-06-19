@@ -30,7 +30,6 @@ export const searchCategoriesByName = async (name) => {
   }
 };
 
-// Exportación por defecto para compatibilidad
 export default {
   getCategories,
   createCategory,

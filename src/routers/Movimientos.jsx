@@ -250,7 +250,7 @@ const Movimientos = () => {
         </div>
       </form>
 
-      {/* Barra de búsqueda */}
+      { }
       <form className='w-full flex justify-end mb-4'>
         <div className='flex items-center border-b me-3 gap-2 w-[300px]'>
           <Search/>
@@ -267,7 +267,7 @@ const Movimientos = () => {
         </div>
       </form>
 
-      {/* Lista de transacciones */}
+      { }
       <ul className="flex flex-col w-full h-full p-5 items-center gap-2">
         {transactions.length > 0 ? (
           transactions.map(tx => (
