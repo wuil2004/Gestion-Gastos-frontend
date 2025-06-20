@@ -3,9 +3,9 @@ import api from "../api/api";
 
 export const login = async (email, password) => {
   try {
-    // 1. Hacer la petición al backend
+    
     const response = await api.post('/user/login', {
-      email: email.toLowerCase().trim(), // Normalizamos el email
+      email: email.toLowerCase().trim(),
       password
     });
 
